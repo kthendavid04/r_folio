@@ -2,7 +2,7 @@
   "name": "r_folio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kthendavid04.github.io/my-app",
+  "homepage": "https://kthendavid04.github.io/r_folio/",
   "dependencies": {
     "@artsy/fresnel": "^1.9.0",
     "@testing-library/jest-dom": "^5.14.1",
