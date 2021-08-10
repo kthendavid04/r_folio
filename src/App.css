@@ -36,3 +36,312 @@
     transform: rotate(360deg);
   }
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+:root {
+  --primary: #24aec7;
+  --secondary: #eee8e3;
+  --tertiary: #0db9d0;
+  --dark: #d39193;
+  --light: #fecfb3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: var(--secondary);
+  background-color: var(--primary);
+  line-height: 1.5;
+}
+
+nav .brand-logo {
+font-family:'Stalemate', cursive;
+font-size: 88px;
+}
+a.center.brand-logo {
+padding-top: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  color: var(--dark);
+  font-size: 20px;
+
+}
+
+.img{
+  width:20px;
+  height: 20px;
+  position: left;
+  min-height: 10vh;
+  padding: 2% 6%;
+  display: flex;
+
+}
+
+.section {
+  /* background-image: url("public/images/header-gold.jpeg");  */
+  background-position: center;
+  min-height: 30vh;
+  padding: 2% 6%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.card-panel {
+  background: rgba( 238, 232, 227, 0.90 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3.0px );
+  -webkit-backdrop-filter: blur( 3.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  font-size: 40px;
+  position:center;
+  font-family: 'Mr Bedfort', cursive;
+}
+
+.hero-banner div {
+  flex: 0 0 90%;
+}
+.hero-banner h1 {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  display: right;
+}
+.hero-banner h2 {
+  font-family: 'Mr Bedfort', cursive;
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  display: inline;
+}
+
+.page-wrapper {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-image: url("../images/ombre-gold.jpeg"); */
+  background-size: cover;
+  background-position: center;
+  
+}
+
+
+.page-section {
+  background: rgba( 238, 232, 227, 0.45 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3.0px );
+  -webkit-backdrop-filter: blur( 3.0px );
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.page-section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px solid var(--primary);
+  font-size: 4vw;
+  line-height: 1.1;
+}
+
+.page-section > div {
+  flex: 0 0 77%;
+}
+
+.page-section p {
+  margin-bottom: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  border: 5px solid var(--secondary);
+  /* background-color: var(--primary); */
+  color: var(--tertiary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: soft-light;
+  background-size: 150%;
+  transition: all 0.5s;
+  font-size: 0.9rem;
+}
+
+/* feature first portfolio item */
+.flex-item:first-child {
+    min-height: 400px;
+    flex-basis: 100%;
+}
+
+.flex-item:hover {
+  /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+.flex-item div {
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.flex-item h3 {
+  font-size: 1.6rem;
+}
+
+.contact{
+  background: rgba( 238, 232, 227, 0.45 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3.0px );
+  -webkit-backdrop-filter: blur( 3.0px );
+}
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.contact address a {
+  color: var(--secondary);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: normal;
+  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  margin: 0 0.2rem 0.1rem;
+  display: inline-block;
+}
+
+.contact address a:hover {
+  background-size: 100% 88%;
+  color: var(--secondary);
+}
+
+/* portfolio project images */
+/* .note {
+  background-image: url("..public/images/note.jpeg");
+
+}
+
+.password {
+  background-image: url("..public/images/Password Generator.png");
+}
+
+.planner {
+  background-image: url("..public/images/Scheduler.png");
+}
+
+.weather {
+  background-image: url("..public/images/weather.jpeg");
+}
+
+.seo {
+  background-image: url("..public/images/API Project.png");
+} */
+
+/* end portfolio project images */
+
+@media screen and (max-width: 980px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  nav .brand-logo {
+    font-size: 55px;
+
+  }
+  .card-panel {
+    font-size: 35px;
+    position:center;
+}
+
+  .page-section > h2,
+  .page-section > div {
+    flex: 0 0 100%;
+  }
+
+  .page-section > h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
+  }
+
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+  .card-panel {
+    font-size: 25px;
+    position:center;
+}
+
+  nav .brand-logo {
+    font-size: 40px;
+  }
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact address {
+    flex-direction: row;
+    align-items: flex-start;
+    color:antiquewhite
+  }
+}

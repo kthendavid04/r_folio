@@ -35,10 +35,11 @@ const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as='h1'
-      content='Imagine-a-Company'
+      content='KS Development'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
+        fontFamily: 'Mr Bedfort, cursive',
         fontWeight: 'normal',
         marginBottom: 0,
         marginTop: mobile ? '1.5em' : '3em',
@@ -46,18 +47,19 @@ const HomepageHeading = ({ mobile }) => (
     />
     <Header
       as='h2'
-      content='Do whatever you want when you want to.'
+      content='Every day is a chance to be better..'
       inverted
       style={{
         fontSize: mobile ? '1.5em' : '1.7em',
         fontWeight: 'normal',
         marginTop: mobile ? '0.5em' : '1.5em',
+        fontFamily: 'Mr Bedfort, cursive',
       }}
     />
-    <Button primary size='huge'>
+    {/* <Button primary size='huge'>
       Get Started
       <Icon name='right arrow' />
-    </Button>
+    </Button> */}
   </Container>
 )
 
@@ -103,16 +105,16 @@ class DesktopContainer extends Component {
                 <Menu.Item as='a' active>
                   Home
                 </Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
+                <Menu.Item as='a'>Projects</Menu.Item>
+                <Menu.Item as='a'>Bio</Menu.Item>
+                <Menu.Item as='a'>Contact Me</Menu.Item>
                 <Menu.Item position='right'>
-                  <Button as='a' inverted={!fixed}>
+                  {/* <Button as='a' inverted={!fixed}>
                     Log in
                   </Button>
                   <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
                     Sign Up
-                  </Button>
+                  </Button> */}
                 </Menu.Item>
               </Container>
             </Menu>
@@ -155,11 +157,10 @@ class MobileContainer extends Component {
             <Menu.Item as='a' active>
               Home
             </Menu.Item>
-            <Menu.Item as='a'>Work</Menu.Item>
-            <Menu.Item as='a'>Company</Menu.Item>
-            <Menu.Item as='a'>Careers</Menu.Item>
-            <Menu.Item as='a'>Log in</Menu.Item>
-            <Menu.Item as='a'>Sign Up</Menu.Item>
+            <Menu.Item as='a'>Projects</Menu.Item>
+            <Menu.Item as='a'>Bio</Menu.Item>
+            <Menu.Item as='a'>Contact Me</Menu.Item>
+
           </Sidebar>
 
           <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -175,12 +176,12 @@ class MobileContainer extends Component {
                     <Icon name='sidebar' />
                   </Menu.Item>
                   <Menu.Item position='right'>
-                    <Button as='a' inverted>
+                    {/* <Button as='a' inverted>
                       Log in
                     </Button>
                     <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
                       Sign Up
-                    </Button>
+                    </Button> */}
                   </Menu.Item>
                 </Menu>
               </Container>
