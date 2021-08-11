@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #2f566f; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: whitesmoke;
 }
 
 @keyframes App-logo-spin {
@@ -39,22 +39,32 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 :root {
-  --primary: #24aec7;
+  --primary:  #2f566f;
   --secondary: #eee8e3;
-  --tertiary: #0db9d0;
-  --dark: #d39193;
-  --light: #fecfb3;
+  --tertiary: #4680a5;
+  --dark: #6f482f;
+  --light:#eaeef0;
 }
-
+.container {
+  
+}
 body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: var(--secondary);
-  background-color: var(--primary);
+  background-color: #4680a5;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(203.44, 41%, 31%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(200.00, 17%, 93%) 0, transparent 55%);
   line-height: 1.5;
 }
-
+.aboutMe {
+  backdrop-filter: blur(14px) saturate(170%);
+    -webkit-backdrop-filter: blur(14px) saturate(170%);
+    background-color: rgba(255, 255, 255, 0.53);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
 nav .brand-logo {
 font-family:'Stalemate', cursive;
 font-size: 88px;

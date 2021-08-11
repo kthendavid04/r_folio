@@ -27,13 +27,13 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: var(--secondary);
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
   line-height: 1.5;
 }
 
-.container {
+/* .container {
   background-color: var(--primary);
-}
+} */
 
 nav .brand-logo {
 font-family:'Stalemate', cursive;

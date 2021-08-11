@@ -28,9 +28,6 @@ function NavTabs({ currentPage, handlePageChange }) {
             preventScrolling: true
   }}
 >
-  <NavItem href="">
-    Getting started
-  </NavItem>
   <NavItem href="#About" onClick={() => handlePageChange('About')}
      className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>About
   </NavItem>

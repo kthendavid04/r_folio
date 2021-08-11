@@ -1,4 +1,6 @@
 import React from 'react';
+import 'materialize-css';
+//import { Navbar , NavItem , Icon } from 'react-materialize';
 
 export default function About() {
   return (
@@ -26,3 +28,4 @@ export default function About() {
     </div>
   );
 }
+
