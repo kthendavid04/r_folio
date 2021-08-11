@@ -45,9 +45,7 @@
   --dark: #6f482f;
   --light:#eaeef0;
 }
-.container {
-  
-}
+
 body {
   margin: 0;
   padding: 0;
@@ -218,9 +216,9 @@ p {
     flex-basis: 100%;
 }
 
-.flex-item:hover {
-  /* background-color: rgba(0, 0, 0, 0.3); */
-}
+/* .flex-item:hover {
+  /* background-color: rgba(0, 0, 0, 0.3); 
+} */
 
 .flex-item div {
   background-color: var(--secondary);
@@ -266,26 +264,25 @@ p {
 }
 
 /* portfolio project images */
-/* .note {
-  background-image: url("..public/images/note.jpeg");
-
+.note {
+  background-image: url("./Components/images/header-gold.jpeg");
 }
 
 .password {
-  background-image: url("..public/images/Password Generator.png");
+  background-image: url("./Components/images/pwGenerator.png");
 }
 
 .planner {
-  background-image: url("..public/images/Scheduler.png");
+  background-image: url("./Components/images/Scheduler.png");
 }
 
 .weather {
-  background-image: url("..public/images/weather.jpeg");
+  background-image: url("./Components/images/weather.jpeg");
 }
 
 .seo {
-  background-image: url("..public/images/API Project.png");
-} */
+  background-image: url("./Components/images/ProjAPI.png");
+}
 
 /* end portfolio project images */
 
