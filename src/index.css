@@ -15,7 +15,7 @@ code {
 /* ################################################################################################################################## */
 
 :root {
-  --primary: #24aec7;
+  --primary: #061b47;
   --secondary: #eee8e3;
   --tertiary: #0db9d0;
   --dark: #d39193;
@@ -29,6 +29,10 @@ body {
   color: var(--secondary);
   background-color: var(--primary);
   line-height: 1.5;
+}
+
+.container {
+  background-color: var(--primary);
 }
 
 nav .brand-logo {

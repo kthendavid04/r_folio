@@ -21,16 +21,21 @@ const { MediaContextProvider, } = createMedia({
 
 
 const HomepageHeading = ({ mobile}) => (
-  <Container text>
+  <Container text
+  style={{
+    backgroundColor:'#2f566f'
+  }} >
     <Header
       as='h1'
-      content='Imagine-a-Company'
+      content='KS Development'
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
         fontWeight: 'normal',
         marginBottom: 0,
         marginTop: mobile ? '1.5em' : '3em',
+        fontFamily: 'Mr Bedfort, cursive',
+        backgroundColor: '#2f566f',      
       }}
     />
     <Header
@@ -41,6 +46,7 @@ const HomepageHeading = ({ mobile}) => (
         fontSize: mobile ? '1.5em' : '1.7em',
         fontWeight: 'normal',
         marginTop: mobile ? '0.5em' : '1.5em',
+        fontFamily: 'Mr Bedfort, cursive',
       }}
     />
   </Container>
