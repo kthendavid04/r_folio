@@ -1,11 +1,8 @@
 import React from 'react'
 import 'materialize-css';
 import { Row, Col, Card, Icon, CardTitle} from 'react-materialize';
-//import HeaderGold from '../images/header-gold.jpeg';
-//import PwGen from '../images/pwGenerator.png';
-// import Scheduler from '../images/Scheduler.png';
-// import Weather from '../images/Scheduler.png';
-// import ProjAPI from '../images/ProjAPI.png';
+
+
 
 const Projects = () => (
   

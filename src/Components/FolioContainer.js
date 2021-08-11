@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
+import 'semantic-ui-less/semantic.less';
+import '../App.css';
 import NavTabs from './NavTabs';
-import Home from './pages/Home';
+import Home from './HomepageLayout';
 import About from './pages/About';
 import Project from './pages/Projects';
 import Contact from './pages/Contact';
 
-export default function PortfolioContainer() {
+
+export default function FolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
+
   const renderPage = () => {
     if (currentPage === 'Home') {
       return <Home />;
@@ -17,10 +21,10 @@ export default function PortfolioContainer() {
     if (currentPage === 'Projects') {
       return <Project />;
     }
-    if (currentPage === 'Contact'){
     return <Contact />;
-    }
-  };
+    };
+    
+  
 
   const handlePageChange = (page) => setCurrentPage(page);
 

@@ -5,7 +5,8 @@ import App from './App';
 //import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-less/semantic.less';
 import 'materialize-css';
-import 'materialize-css/dist/css/materialize.min.css'
+import 'materialize-css/dist/css/materialize.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   //<React.StrictMode>

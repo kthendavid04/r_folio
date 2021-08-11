@@ -20,7 +20,7 @@ const { MediaContextProvider, } = createMedia({
 })
 
 
-const HomepageHeading = ({ mobile}) => (
+const HomepageLayout = ({ mobile}) => (
   <Container text
   >
     <Header
@@ -48,7 +48,7 @@ const HomepageHeading = ({ mobile}) => (
     />
   </Container>
 )
-HomepageHeading.propTypes = {
+HomepageLayout.propTypes = {
     mobile: PropTypes.bool,
 }
 
@@ -64,7 +64,7 @@ class MobileContainer extends Component {
               textAlign='center'
               style={{ minHeight: 350, padding: '1em 0em' }}
               vertical>
-              <HomepageHeading mobile />
+              <HomepageLayout mobile />
               {children}
         </Segment>
     )
@@ -83,7 +83,7 @@ class DesktopContainer extends Component {
             textAlign='center'
             style={{ minHeight: 700, padding: '1em 0em' }}
             vertical>
-            <HomepageHeading mobile />
+            <HomepageLayout mobile />
             {children}
           </Segment>
          
@@ -112,4 +112,4 @@ ResponsiveContainer.propTypes = {
 
 
 
-export default HomepageHeading
+export default HomepageLayout

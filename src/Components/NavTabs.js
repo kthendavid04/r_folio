@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
 import 'materialize-css';
 import { Navbar , NavItem , Icon } from 'react-materialize';
-
+import 'semantic-ui-less/semantic.less';
+import 'materialize-css';
+import 'materialize-css/dist/css/materialize.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -14,7 +17,8 @@ function NavTabs({ currentPage, handlePageChange }) {
             id="mobile-nav"
             menuIcon={<Icon>menu</Icon>}
             style={{
-                backgroundColor:'#2f566f'
+                backgroundColor:'#2f566f',
+                textColor: 'white',
               }} 
             options={{
             draggable: true,
